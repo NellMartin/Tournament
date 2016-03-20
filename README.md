@@ -11,19 +11,22 @@ This projectis written in Python. It is a module that uses PostgreSQL database t
 - [Contents](#contents)
 - [References](#references)
 
-====
+---
+
 ### Introduction
 
 This project is designed to: to teach you how to create and use databases through the use of database schemas and how to manipulate the data inside the database. This project has two parts: defining the database schema (SQL table definitions) in tournament.sql, and writing code that will use it to track a Swiss tournament in tournament.py.
 
-====
+---
+
 ### Technologies
 -  PostgreSQL - Database
 -  Python 2.7 - Scripting Language
 -  Vagrant - Virtualization
 -  Virtual Box - Virtual Machine
 
-====
+---
+
 ## System Requirements
 For the following software, choose the installation appropiate to your Operative System.
 - [Virtual Box Version 5.0](https://www.virtualbox.org/wiki/Downloads)
@@ -32,7 +35,8 @@ For the following software, choose the installation appropiate to your Operative
 - [Python IDE - IDLE](https://docs.python.org/3/library/idle.html)
 - Command Line or Terminal.
 
-====
+---
+
 ## Installation
 First, fork the [fullstack-nanodegree-vm repository](#https://www.google.com/url?q=http://github.com/udacity/fullstack-nanodegree-vm&sa=D&ust=1458487900160000&usg=AFQjCNHBQhACq_wS9zRVL9hdU0GzvSaU2w) so that you have a version of your own within your Github account.
 
@@ -52,7 +56,7 @@ To use the Vagrant virtual machine, navigate to the `full-stack-nanodegree-vm/to
 
 In the command line (and while inside the directory `/vagrant/tournament`) type `python tournament_test.py`.
 
-====
+---
 
 ## Contents
 
@@ -62,12 +66,4 @@ File | Description | Contains
 **tournament.sql**| Defines the database schema.  | Contains: Tables (players, matches), Views (Summary of winners, losers, and billboard for standings), Unique Index (.
 **tournament_test.py** | Executes functions from tournament.py and test if current function executes correctly, and output is the expected one.|  Script to execute tournament.py
 
-===
-
-## References
-
-Udacity Nanodegree Forums 2016.
-
-
-
-
+---
