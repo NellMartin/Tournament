@@ -1,33 +1,27 @@
-# Tournament
----
+# Read Me File 
 
-This projectis written in Python. It is a module that uses PostgreSQL database to keept rack of players and matches in a game tournament using the technique Swiss Pairing.  In the next following sections it is going to be discussed: the technologies used, how to run generate the database, how to run the tests for the modules.
+This projectis is written and based in Python. It is a module that uses PostgreSQL database to keept rack of players and matches in a game tournament using the technique Swiss Pairing.  In the next following sections it is going to be discussed: the technologies used, how to run generate the database, how to run the tests for the modules.
 
 ## Table of Contents
-
 - [Introduction](#introduction)
 - [Technologies](#technologies)
 - [Installation](#installation)
 - [Contents](#contents)
-- [References](#references)
 
 ---
-
-### Introduction
+#### Introduction
 
 This project is designed to: to teach you how to create and use databases through the use of database schemas and how to manipulate the data inside the database. This project has two parts: defining the database schema (SQL table definitions) in tournament.sql, and writing code that will use it to track a Swiss tournament in tournament.py.
 
 ---
-
-### Technologies
+#### Technologies
 -  PostgreSQL - Database
 -  Python 2.7 - Scripting Language
 -  Vagrant - Virtualization
 -  Virtual Box - Virtual Machine
 
 ---
-
-## System Requirements
+#### System Requirements
 For the following software, choose the installation appropiate to your Operative System.
 - [Virtual Box Version 5.0](https://www.virtualbox.org/wiki/Downloads)
 - [Python Version 2.7](https://www.python.org/downloads/)
@@ -36,13 +30,12 @@ For the following software, choose the installation appropiate to your Operative
 - Command Line or Terminal.
 
 ---
-
-## Installation
+#### Installation
 First, fork the [fullstack-nanodegree-vm repository](#https://www.google.com/url?q=http://github.com/udacity/fullstack-nanodegree-vm&sa=D&ust=1458487900160000&usg=AFQjCNHBQhACq_wS9zRVL9hdU0GzvSaU2w) so that you have a version of your own within your Github account.
 
 Next clone your fullstack-nanodegree-vm repo to your local machine.
 
-### Using the Vagrant Virtual Machine
+##### Using the Vagrant Virtual Machine
 
 The Vagrant VM has PostgreSQL installed and configured, as well as the psql command line interface (CLI), so that you don't have to install or configure them on your local machine.
 
@@ -52,18 +45,15 @@ To use the Vagrant virtual machine, navigate to the `full-stack-nanodegree-vm/to
 - Use the command `cd /vagrant` to change directory to the synced folders in order to work on your project.
 - And finally use the command `ls` on the command line, you'll see your tournament folder.
 
-### To run the script
+##### To run the script
 
 In the command line (and while inside the directory `/vagrant/tournament`) type `python tournament_test.py`.
 
 ---
-
-## Contents
+### Contents
 
 File | Description | Contains
 --- | --- | ---
 **tournament.py**| Contains Python modules with execution of queries. | Contains:  <ul> <li>connect (connect database)</li><li> deleteMatches (delete all records from database)</li> <li> deletePlayers (delete all players from database)</li> <li>countPlayers (count Players)</li> <li> registerPlayer (register a player)</li> <li>playerStandings(retrieve list of winners)</li> <li>reportMatch(set the winner and loser and store in database)</li> <li>swissPairing( Return list of pairs of players fro next round in the match)</li><ul>
 **tournament.sql**| Defines the database schema.  | Contains: Tables (players, matches), Views (Summary of winners, losers, and billboard for standings), Unique Index (.
 **tournament_test.py** | Executes functions from tournament.py and test if current function executes correctly, and output is the expected one.|  Script to execute tournament.py
-
----
