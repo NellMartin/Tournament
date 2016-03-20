@@ -22,6 +22,7 @@ This project is designed to: to teach you how to create and use databases throug
 -  Python 2.7 - Scripting Language
 -  Vagrant - Virtualization
 -  Virtual Box - Virtual Machine
+
 ====
 ## System Requirements
 For the following software, choose the installation appropiate to your Operative System.
@@ -53,7 +54,19 @@ In the command line (and while inside the directory `/vagrant/tournament`) type 
 
 ====
 
-## Description
+## Contents
+
+File | Description | Contains
+--- | --- | ---
+**tournament.py**| Contains Python modules with execution of queries. | Contains:  <ul> <li>connect (connect database)</li><li> deleteMatches (delete all records from database)</li> <li> deletePlayers (delete all players from database)</li> <li>countPlayers (count Players)</li> <li> registerPlayer (register a player)</li> <li>playerStandings(retrieve list of winners)</li> <li>reportMatch(set the winner and loser and store in database)</li> <li>swissPairing( Return list of pairs of players fro next round in the match)</li><ul>
+**tournament.sql**| Defines the database schema.  | Contains: Tables (players, matches), Views (Summary of winners, losers, and billboard for standings), Unique Index (.
+**tournament_test.py** | Executes functions from tournament.py and test if current function executes correctly, and output is the expected one.|  Script to execute tournament.py
+
+===
+
+## References
+
+Udacity Nanodegree Forums 2016.
 
 
 
