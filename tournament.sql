@@ -1,5 +1,4 @@
 -- Table definitions for the tournament project.
--- Author:  Nelitza Martinez-Vega
 -- Drop databse if exists.
 DROP DATABASE if exists tournament;
 
