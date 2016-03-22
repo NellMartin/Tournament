@@ -8,6 +8,7 @@ This projectis is written and based in Python. It is a module that uses PostgreS
 - [System Requirements](#system-requirements)
 - [Installation](#installation)
 - [Contents](#contents)
+- [References](#references)
 
 ---
 #### Introduction
@@ -58,3 +59,7 @@ File | Description | Contains
 **tournament.py**| Contains Python modules with execution of queries. | Contains:  <ul> <li>connect (connect database)</li><li> deleteMatches (delete all records from database)</li> <li> deletePlayers (delete all players from database)</li> <li>countPlayers (count Players)</li> <li> registerPlayer (register a player)</li> <li>playerStandings (retrieve list of winners)</li> <li>reportMatch (set the winner and loser and store in database)</li> <li>swissPairing ( Return list of pairs of players for next round in the match)</li><ul>
 **tournament.sql**| Defines the database schema.  | Contains: Tables (players, matches), Views (Summary of winners, losers, and billboard for standings), Unique Index (to prevent rematch of players).
 **tournament_test.py** | Executes functions from tournament.py and test if current function executes correctly, and output is the expected one.|  Script to execute tournament.py.
+
+---
+### References
+Udacity FSDN forums.
